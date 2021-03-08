@@ -10,7 +10,7 @@ caching, sharing, upgrading to a paid account to display all historical stock da
 
 ** simulator lag and low fps to upload file, not actual performance **
 
-![demo]()
+![demo](demo.gif)
 
 ## Built with:
 SwiftUI
