@@ -1,0 +1,64 @@
+//
+//  DailyStock.swift
+//  Stocks
+//
+//  Created by Scott on 3/7/21.
+//
+
+import Foundation
+
+struct StockPrice : Codable{
+    let open: String
+    let close: String
+    let high: String
+    let low: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case open = "1. open"
+        case high = "2. high"
+        case low = "3. low"
+        case close = "4. close"
+    }
+}
+
+struct StocksDaily : Codable {
+    let timeSeriesDaily: [String: StockPrice]?
+    
+    private enum CodingKeys: String, CodingKey {
+        case timeSeriesDaily = "Time Series (Daily)"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        timeSeriesDaily = try (values.decodeIfPresent([String : StockPrice].self, forKey: .timeSeriesDaily))
+    }
+}
+
+struct StocksWeekly : Codable {
+    let timeSeriesWeekly: [String: StockPrice]?
+    
+    private enum CodingKeys: String, CodingKey {
+        case timeSeriesWeekly = "Weekly Time Series"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        timeSeriesWeekly = try (values.decodeIfPresent([String : StockPrice].self, forKey: .timeSeriesWeekly))
+    }
+}
+
+struct StocksMonthly : Codable {
+    let timeSeriesMonthly: [String: StockPrice]?
+    
+    private enum CodingKeys: String, CodingKey {
+        case timeSeriesMonthly = "Monthly Time Series"
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        
+        timeSeriesMonthly = try (values.decodeIfPresent([String : StockPrice].self, forKey: .timeSeriesMonthly))
+    }
+}
