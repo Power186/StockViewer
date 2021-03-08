@@ -8,6 +8,8 @@ api only allows 5 api calls at a time.  A paid account for the api is needed for
 ## TODO:
 caching, sharing, upgrading to a paid account to display all historical stock data instead of only daily data. Refactor. Add unit tests in api, model, and network calls.
 
+** simulator lag and low fps to upload file, not actual performance **
+
 ![demo]()
 
 ## Built with:
