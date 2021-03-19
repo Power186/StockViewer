@@ -13,7 +13,8 @@ sharing, upgrading to a paid account to display all historical stock data instea
 ![demo](demo.gif)
 
 ## Built with:
-SwiftUI
-Swift
-MVVM
-Refactoring
+* SwiftUI
+* Swift
+* Core Data
+* MVVM
+* Refactoring
