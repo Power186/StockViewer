@@ -62,19 +62,19 @@ struct StocksView: View {
     } // body
     
     private func fetchDailyData(for symbol: String) {
-        historicalVM.downloadDailyStocks(stock: symbol) { _ in
+        historicalVM.fetchDailyStocks(stock: symbol) { _ in
             // completion block
         }
     }
     
     private func fetchWeeklyData(for symbol: String) {
-        historicalVM.downloadWeeklyStocks(stock: symbol) { _ in
+        historicalVM.fetchWeeklyStocks(stock: symbol) { _ in
             // completion block
         }
     }
     
     private func fetchMontlyData(for symbol: String) {
-        historicalVM.downloadMonthlyStocks(stock: symbol) { _ in
+        historicalVM.fetchMonthlyStocks(stock: symbol) { _ in
             // completion block
         }
     }

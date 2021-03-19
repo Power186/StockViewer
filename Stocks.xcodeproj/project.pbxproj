@@ -138,12 +138,28 @@
 		D2811CDE25F079A700DB3CB9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				D276CA1425F0156600F35C59 /* API.swift */,
-				D276CA1D25F0164400F35C59 /* NetworkManager.swift */,
 				D2811CE125F07C1F00DB3CB9 /* String+Extension.swift */,
 				D278706325F5BFAE00CD9452 /* ColoredButtonStyle.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D2BC201D260439C2000BCC3F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D276CA1425F0156600F35C59 /* API.swift */,
+				D276CA1D25F0164400F35C59 /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D2BC201F260439F0000BCC3F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D2F5A4BA25F4D6C000774435 /* PersistenceController.swift */,
+				D2F5A4B525F4D5CF00774435 /* Main.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		D2FEC2B925EE5BFC007C0263 = {
@@ -165,13 +181,13 @@
 		D2FEC2C425EE5BFC007C0263 /* Stocks */ = {
 			isa = PBXGroup;
 			children = (
+				D2BC201F260439F0000BCC3F /* Data */,
+				D2BC201D260439C2000BCC3F /* Services */,
 				D276CA2625F0189400F35C59 /* Activities */,
 				D26FCFC225F4569900AC9DEC /* Stock Charts */,
 				D2811CDE25F079A700DB3CB9 /* Extensions */,
 				D2FEC2C525EE5BFC007C0263 /* StocksApp.swift */,
 				D2FEC2C925EE5BFF007C0263 /* Assets.xcassets */,
-				D2F5A4BA25F4D6C000774435 /* PersistenceController.swift */,
-				D2F5A4B525F4D5CF00774435 /* Main.xcdatamodeld */,
 				D2FEC2CE25EE5BFF007C0263 /* Info.plist */,
 				D2FEC2CB25EE5BFF007C0263 /* Preview Content */,
 			);

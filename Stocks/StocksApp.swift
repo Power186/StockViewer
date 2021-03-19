@@ -14,7 +14,7 @@ struct StocksApp: App {
     
     init() {
         let temporaryDirectory = NSTemporaryDirectory()
-        let urlCache = URLCache(memoryCapacity: 450_000_000, diskCapacity: 650_000_000, diskPath: temporaryDirectory)
+        let urlCache = URLCache(memoryCapacity: 150_000_000, diskCapacity: 200_000_000, diskPath: temporaryDirectory)
         URLCache.shared = urlCache
     }
     

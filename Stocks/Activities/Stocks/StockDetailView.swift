@@ -15,7 +15,6 @@ struct StockDetailView: View {
     @State private var weeklySelectedIndex = 0
     @State private var monthlySelectedIndex = 0
     
-    @Environment(\.managedObjectContext) var managedObjectContext
     @State private var dailyPriceArray = [Double]()
     @State private var weeklyPriceArray = [Double]()
     @State private var monthlyPriceArray = [Double]()
@@ -103,19 +102,19 @@ struct StockDetailView: View {
     }
     
     private func fetchDailyData(for symbol: String) {
-        historicalVM.downloadDailyStocks(stock: symbol) { _ in
+        historicalVM.fetchDailyStocks(stock: symbol) { _ in
             // completion block
         }
     }
     
     private func fetchWeeklyData(for symbol: String) {
-        historicalVM.downloadWeeklyStocks(stock: symbol) { _ in
+        historicalVM.fetchWeeklyStocks(stock: symbol) { _ in
             // completion block
         }
     }
     
     private func fetchMontlyData(for symbol: String) {
-        historicalVM.downloadMonthlyStocks(stock: symbol) { _ in
+        historicalVM.fetchMonthlyStocks(stock: symbol) { _ in
             // completion block
         }
     }
