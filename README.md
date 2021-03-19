@@ -6,7 +6,7 @@ App displays current mock data, but can fetch live data by uncommenting lines in
 api only allows 5 api calls at a time.  A paid account for the api is needed for full functionality.  Search works as intended, but the detail screen may not update if 5 or more stocks were in results.
 
 ## TODO:
-caching, sharing, upgrading to a paid account to display all historical stock data instead of only daily data. Refactor. Add unit tests in api, model, and network calls.
+sharing, upgrading to a paid account to display all historical stock data instead of only daily data. Refactor. Add unit tests in api, model, and network calls.
 
 ** simulator lag and low fps to upload file, not actual performance **
 
