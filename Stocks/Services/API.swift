@@ -66,6 +66,6 @@ struct API {
 
 extension API {
     static var key: String {
-        return "REZOIAIT7A963SSM"
+        return "YOUR-API-KEY"
     }
 }
